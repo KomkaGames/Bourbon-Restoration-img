@@ -257,3 +257,35 @@ main img {
 body.dark-mode main img {
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
 }
+/* --- СТИЛІ ДЛЯ ЗОБРАЖЕНЬ ТА ПІДПИСІВ --- */
+
+figure {
+    margin: 20px auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+figure img {
+    /* Стилі з попереднього кроку, які переміщені у figure img */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Зображення центрується всередині figure */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #eee;
+    font-style: italic;
+}
+
+/* Темний режим для підписів */
+body.dark-mode figcaption {
+    color: #aeb6bf;
+    border-top: 1px solid #4b5463;
+}
